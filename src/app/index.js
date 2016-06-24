@@ -19,12 +19,6 @@ class Comp extends React.Component {
         title: 'the title'
       }
     })
-
-    this.refs.sidebar.openKey = this.props.location.pathname
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.refs.sidebar.openKey = nextProps.location.pathname
   }
 
   render() {
