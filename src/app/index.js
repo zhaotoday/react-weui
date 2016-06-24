@@ -1,5 +1,3 @@
-import 'antd/dist/antd.css'
-
 import React from 'react'
 import actionCreators from '../redux/actions'
 
