@@ -5,8 +5,8 @@ import Cell from 'components/weui/cell'
 import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
 import Label from 'components/weui/label'
-import Icon from 'components/weui/icon'
 import I from 'components/i'
+import styles from './theme/styles'
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -14,7 +14,7 @@ module.exports = class extends React.Component {
   }
 
   render() {
-    return <div className="container">
+    return <section className={styles.login}>
       <I type="user" />
       <Form>
         <Form.Cell>
@@ -39,7 +39,7 @@ module.exports = class extends React.Component {
         <Button size="small" type="default">我要登陆</Button>
         <Button size="small" type="default" style={ { float: 'right' } }>忘记密码</Button>
       </Button.Area>
-    </div>
+    </section>
   }
 
   _handleClick = () => {

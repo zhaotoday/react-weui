@@ -1,0 +1,12 @@
+.login {
+  i {
+    display: block;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 20px auto;
+    color: #dfdfdf;
+  }
+}
