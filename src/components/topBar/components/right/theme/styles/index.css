@@ -1,14 +1,6 @@
-@import "../../../../../../theme/css/index";
-
 .right {
   position: absolute;
   right:0;
   top:0;
-  margin-right: px2rem(30px);
-  color: color(1);
-
-  span {
-    color: color(1);
-    @extend .f4;
-  }
+  margin-right: 30px;
 }

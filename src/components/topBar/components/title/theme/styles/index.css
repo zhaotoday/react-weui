@@ -1,7 +1,3 @@
-@import "../../../../../../theme/css/index";
-
 .title {
   text-align: center;
-  @extend .f1;
-  color: color(1);
 }

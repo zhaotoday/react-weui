@@ -1,9 +1,7 @@
-@import "../../../../theme/css/index";
-
 .top-bar {
-  height: px2rem(80px);
-  line-height: px2rem(80px);
-  background-color: rgba(245,245,245,1);
+  height: 40px;
+  line-height: 40px;
+  background-color: #04BE02;
   z-index: 10000;
 
   &::after {
@@ -16,10 +14,10 @@
   i {
     display: inline-block;
     vertical-align: middle;
-    width: px2rem(48px);
-    height: px2rem(48px);
-    line-height: px2rem(46px);
-    font-size: px2rem(46px);
-    color: color(1);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    color: white;
   }
 }
