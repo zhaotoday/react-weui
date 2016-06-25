@@ -3,6 +3,7 @@ import actionCreators from '../redux/actions'
 
 import { connect } from 'react-redux'
 import { Head, Body, Sidebar, Main } from 'app/layout'
+import 'weui'
 
 @connect(
   state => ({
