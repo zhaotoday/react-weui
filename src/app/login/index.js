@@ -6,10 +6,7 @@ import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
 import Label from 'components/weui/label'
 import Icon from 'components/weui/icon'
-import '../../themes/default/styles/iconfont.css'
-const bang = require('./theme/images/bang.png')
-
-
+import I from 'components/i'
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -18,7 +15,7 @@ module.exports = class extends React.Component {
 
   render() {
     return <div className="container">
-      <i className="iconfont icon-user" />
+      <I type="user" />
       <Form>
         <Form.Cell>
           <Cell.Header>
