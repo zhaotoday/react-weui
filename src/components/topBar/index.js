@@ -1,14 +1,12 @@
 import React from 'react'
-import Left from './component/left'
-import Right from './component/right'
-import Title from './component/title'
-import styles from './theme/css'
-import classNames from 'classnames'
+import Left from './components/left'
+import Right from './components/right'
+import Title from './components/title'
+import styles from './theme/styles'
 
 class TopBar extends React.Component {
   static propTypes = {
-    title: React.PropTypes.string,
-    transparent: React.PropTypes.bool
+    title: React.PropTypes.string
   }
 
   static defaultProps = {
@@ -16,8 +14,7 @@ class TopBar extends React.Component {
   }
 
   render() {
-    const { transparent } = this.props
-    return <div className={classNames(styles['top-bar'], transparent ? styles['transparent'] : '')}>
+    return <div className={styles['top-bar']}>
       {this.props.children}
     </div>
   }
