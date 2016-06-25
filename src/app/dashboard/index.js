@@ -4,6 +4,7 @@ import Cells from 'components/weui/cells'
 import Cell from 'components/weui/cell'
 import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
+import Label from 'components/weui/label'
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -12,19 +13,29 @@ module.exports = class extends React.Component {
 
   render() {
     return <div className="container">
-      <Cells.Title>带说明的列表项</Cells.Title>
-      <Cells>
-        <Cell>
+      <Form>
+        <Form.Cell>
+          <Cell.Header>
+            <Label>qq</Label>
+          </Cell.Header>
           <Cell.Body>
-            标题文字
+            <Input type="tel" placeholder="请输入qq号"/>
           </Cell.Body>
-          <Cell.Footer>
-            <Input type="tel" placeholder="请输入号码" />
-          </Cell.Footer>
-        </Cell>
-      </Cells>
-      <Button type="primary" onClick={this._handleClick}>Yes</Button>
-      dashboard</div>
+        </Form.Cell>
+        <Form.Cell>
+          <Cell.Header>
+            <Label>qq</Label>
+          </Cell.Header>
+          <Cell.Body>
+            <Input type="tel" placeholder="请输入qq号"/>
+          </Cell.Body>
+        </Form.Cell>
+      </Form>
+      <Button.Area>
+        <Button>确定</Button>
+        <Button type="default">取消</Button>
+      </Button.Area>
+    </div>
   }
 
   _handleClick = () => {
