@@ -1,7 +1,9 @@
 import React from 'react'
-//import WeUI from 'react-weui'
-import {Button} from 'react-weui/lib/components/button'
-//const {Button, Form, FormCell, CellBody, CellFooter, Switch} = WeUI
+import Button from 'components/weui/button'
+import Cells from 'components/weui/cells'
+import Cell from 'components/weui/cell'
+import Form from 'components/weui/form/form'
+import Input from 'components/weui/form/input'
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -10,7 +12,18 @@ module.exports = class extends React.Component {
 
   render() {
     return <div className="container">
-      <Button type="primary" onClick={this._handleClick}>确认</Button>
+      <Cells.Title>带说明的列表项</Cells.Title>
+      <Cells>
+        <Cell>
+          <Cell.Body>
+            标题文字
+          </Cell.Body>
+          <Cell.Footer>
+            <Input type="tel" placeholder="请输入号码" />
+          </Cell.Footer>
+        </Cell>
+      </Cells>
+      <Button type="primary" onClick={this._handleClick}>Yes</Button>
       dashboard</div>
   }
 
