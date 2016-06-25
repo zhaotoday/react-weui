@@ -6,6 +6,7 @@ import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
 import Label from 'components/weui/label'
 import I from 'components/i'
+import TopBar from 'components/topBar'
 import styles from './theme/styles'
 
 module.exports = class extends React.Component {
@@ -15,7 +16,17 @@ module.exports = class extends React.Component {
 
   render() {
     return <section className={styles.login}>
-      <I type="user" />
+
+      <TopBar ref="topBar">
+        <TopBar.Left>
+          <I type="arrow-l" />
+        </TopBar.Left>
+        <TopBar.Title>他帮</TopBar.Title>
+        <TopBar.Right>
+          <I type="home" />
+        </TopBar.Right>
+      </TopBar>
+      <I type="user" className={styles.user} />
       <Form>
         <Form.Cell>
           <Cell.Header>
@@ -35,8 +46,8 @@ module.exports = class extends React.Component {
         </Form.Cell>
       </Form>
       <Button.Area>
-        <Button type="primary" onClick={this._handleClick}>注册</Button>
-        <Button size="small" type="default">我要登陆</Button>
+        <Button type="primary" onClick={this._handleClick}>登陆</Button>
+        <Button size="small" type="default">注册</Button>
         <Button size="small" type="default" style={ { float: 'right' } }>忘记密码</Button>
       </Button.Area>
     </section>

@@ -1,8 +1,9 @@
 .top-bar {
-  height: 40px;
-  line-height: 40px;
+  height: 42px;
+  line-height: 42px;
   background-color: #04BE02;
   z-index: 10000;
+  color: white;
 
   &::after {
     content: '';
@@ -14,10 +15,10 @@
   i {
     display: inline-block;
     vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 40px;
-    color: white;
+    width: 42px;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
   }
 }
