@@ -14,6 +14,7 @@ module.exports = class extends React.Component {
 
   render() {
     return <div className="container">
+      <img src={bang} style={ { display: 'block', width: '30%', height: '30%', margin: '20px auto' } }/>
       <Form>
         <Form.Cell>
           <Cell.Header>
@@ -30,17 +31,28 @@ module.exports = class extends React.Component {
           <Cell.Body>
             <Input type="tel" placeholder="请输入密码" />
           </Cell.Body>
+          <Cell.Footer>
+            <Button type="default" size="small">获取验证码</Button>
+          </Cell.Footer>
+        </Form.Cell>
+        <Form.Cell>
+          <Cell.Header>
+            <Label>验证码</Label>
+          </Cell.Header>
+          <Cell.Body>
+            <Input type="tel" placeholder="请输入验证码" />
+          </Cell.Body>
         </Form.Cell>
       </Form>
       <Button.Area>
-        <Button type="primary" onClick={this._handleClick}>注册</Button>
-        <Button size="small" type="default">我要登陆</Button>
-        <Button size="small" type="default" style={ { float: 'right' } }>忘记密码</Button>
+        <Button type="primary">注册</Button>
+        <Button size="small" plain>我要登陆</Button>
+        <Button size="small" plain style={ { float: 'right' } }>忘记密码</Button>
       </Button.Area>
     </div>
   }
 
   _handleClick = () => {
-    this.context.router.push('register')
+    this.context.router.push('article')
   }
 }

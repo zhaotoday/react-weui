@@ -37,5 +37,8 @@ module.exports = {
         replace('/')
       }
     }
+  }, {
+    path: 'register',
+    component: require('app/register')
   }]
 }

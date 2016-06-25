@@ -5,6 +5,7 @@ import Cell from 'components/weui/cell'
 import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
 import Label from 'components/weui/label'
+const bang = require('./theme/images/bang.png')
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -13,28 +14,7 @@ module.exports = class extends React.Component {
 
   render() {
     return <div className="container">
-      <Form>
-        <Form.Cell>
-          <Cell.Header>
-            <Label>qq</Label>
-          </Cell.Header>
-          <Cell.Body>
-            <Input type="tel" placeholder="请输入qq号"/>
-          </Cell.Body>
-        </Form.Cell>
-        <Form.Cell>
-          <Cell.Header>
-            <Label>qq</Label>
-          </Cell.Header>
-          <Cell.Body>
-            <Input type="tel" placeholder="请输入qq号"/>
-          </Cell.Body>
-        </Form.Cell>
-      </Form>
-      <Button.Area>
-        <Button>确定</Button>
-        <Button type="default">取消</Button>
-      </Button.Area>
+      ...
     </div>
   }
 
