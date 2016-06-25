@@ -1,0 +1,25 @@
+@import "../../../../theme/css/index";
+
+.top-bar {
+  height: px2rem(80px);
+  line-height: px2rem(80px);
+  background-color: rgba(245,245,245,1);
+  z-index: 10000;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    width: px2rem(48px);
+    height: px2rem(48px);
+    line-height: px2rem(46px);
+    font-size: px2rem(46px);
+    color: color(1);
+  }
+}

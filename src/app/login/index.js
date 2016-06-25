@@ -30,7 +30,7 @@ module.exports = class extends React.Component {
             <Label>密码</Label>
           </Cell.Header>
           <Cell.Body>
-            <Input type="tel" placeholder="请输入密码" />
+            <Input type="password" placeholder="请输入密码" />
           </Cell.Body>
         </Form.Cell>
       </Form>

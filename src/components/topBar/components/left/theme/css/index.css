@@ -1,0 +1,8 @@
+@import "../../../../../../theme/css/index";
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: px2rem(30px);
+}
