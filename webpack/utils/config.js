@@ -17,7 +17,7 @@ const config = {
     ]
   },
   postcss: [
-    require('postcss-font-magician'),
+    require('postcss-font-magician')(),
     require('cssnano')({
       filterPlugins: false,
       sourcemap: true,
