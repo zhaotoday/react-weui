@@ -8,7 +8,6 @@ import Toast from 'components/weui/toast'
 import I from 'components/i'
 import TopBar from 'components/topBar'
 import styles from './theme/styles'
-import notice from 'utils/notice'
 
 module.exports = class extends React.Component {
   static contextTypes = {
@@ -19,11 +18,8 @@ module.exports = class extends React.Component {
     showLoading: false
   }
 
-  componentDidMount() {
-  }
-
   render() {
-    return <section className={styles.login}>
+    return <section className={styles.register}>
       <I type="user" className={styles.user} />
       <Form>
         <Form.Cell>
@@ -36,6 +32,17 @@ module.exports = class extends React.Component {
         </Form.Cell>
         <Form.Cell>
           <Cell.Header>
+            <Label>手机验证码</Label>
+          </Cell.Header>
+          <Cell.Body>
+            <Input type="tel" placeholder="输入验证码" />
+          </Cell.Body>
+          <Cell.Footer>
+            <Button size="small" type="default">获取验证码</Button>
+          </Cell.Footer>
+        </Form.Cell>
+        <Form.Cell>
+          <Cell.Header>
             <Label>密码</Label>
           </Cell.Header>
           <Cell.Body>
@@ -44,20 +51,18 @@ module.exports = class extends React.Component {
         </Form.Cell>
       </Form>
       <Button.Area>
-        <Button type="primary" onClick={this._handleClickLogin}>登陆</Button>
-        <Button size="small" type="default" onClick={this._handleClickRegister}>我要注册</Button>
+        <Button type="primary" onClick={this._handleClickRegister}>注册</Button>
+        <Button size="small" type="default" onClick={this._handleClickLogin}>我要登陆</Button>
         <Button size="small" type="default" style={{ float: 'right' }}>忘记密码</Button>
       </Button.Area>
-      <Toast icon="loading" show={this.state.showLoading}>登陆中...</Toast>
+      <Toast icon="loading" show={this.state.showLoading}>提交中...</Toast>
     </section>
   }
 
   /*
-   登陆
+   注册
    */
-  _handleClickLogin = () => {
-    notice.error('手机格式错误<br/>密码不能为空')
-    return
+  _handleClickRegister = () => {
     this.setState({
       showLoading: true
     })
@@ -65,9 +70,9 @@ module.exports = class extends React.Component {
   }
 
   /*
-   跳转到注册页面
+   跳转到登陆页面
    */
-  _handleClickRegister = () => {
-    this.context.router.push('register')
+  _handleClickLogin = () => {
+    this.context.router.push('login')
   }
 }
