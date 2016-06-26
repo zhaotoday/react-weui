@@ -13,6 +13,10 @@ const config = {
       {
         test: /\.(png|jpg|gif)$/,
         loader: 'url?limit=8192&name=images/[hash].[ext]'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
       }
     ]
   },
