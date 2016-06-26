@@ -5,16 +5,6 @@ module.exports = {
   childRoutes: [{
     path: '/',
     component: require('app'),
-    onEnter(nextState, replace) {
-      if (!auth.isLogin()) {
-        replace({
-          pathname: '/login',
-          state: {
-            nextPathname: nextState.location.pathname
-          }
-        })
-      }
-    },
     getIndexRoute(location, callback) {
       require.ensure([], function (require) {
         callback(null, {
