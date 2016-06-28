@@ -15,7 +15,10 @@ module.exports = {
     getChildRoutes(location, cb) {
       require.ensure([], (require) => {
         cb(null, [
-          require('./article')
+          require('./article'),
+          require('./help'),
+          require('./need'),
+          require('./setup')
         ])
       })
     }

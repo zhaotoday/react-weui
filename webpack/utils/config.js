@@ -15,6 +15,10 @@ const config = {
         loader: 'url?limit=8192&name=images/[hash].[ext]'
       },
       {
+        test: /\.(eot|svg|ttf|woff)$/,
+        loader: 'file?name=fonts/[hash].[ext]'
+      },
+      {
         test: /\.scss$/,
         loader: 'style!css!sass'
       }

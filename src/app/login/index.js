@@ -56,12 +56,16 @@ module.exports = class extends React.Component {
    登陆
    */
   _handleClickLogin = () => {
+    /*
     notice.error('手机格式错误<br/>密码不能为空')
     return
+     */
     this.setState({
       showLoading: true
     })
-    //this.context.router.push('register')
+    setTimeout(() => {
+      this.context.router.push('/')
+    }, 1000)
   }
 
   /*

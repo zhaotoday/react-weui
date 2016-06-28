@@ -1,8 +1,9 @@
 import React from 'react'
 import actionCreators from '../redux/actions'
+import Tab from 'components/weui/tab'
 
 import { connect } from 'react-redux'
-import { Head, Body, Sidebar, Main } from 'app/layout'
+import { Body, Foot } from 'app/layout'
 
 import 'weui'
 import '../themes'
@@ -22,18 +23,19 @@ class Comp extends React.Component {
         title: 'the title'
       }
     })
+
+    this.refs.foot.tab = this.props.location.pathname
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.refs.foot.tab = nextProps.location.pathname
   }
 
   render() {
-    return <div>
-      <Head />
-      <Body>
-        <Sidebar ref="sidebar" />
-        <Main>
-          {this.props.children}
-        </Main>
-      </Body>
-    </div>
+    return <Tab>
+      <Body>{this.props.children}</Body>
+      <Foot ref="foot" />
+    </Tab>
   }
 }
 
