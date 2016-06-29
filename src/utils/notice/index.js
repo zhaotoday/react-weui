@@ -1,6 +1,6 @@
 import './theme/styles'
-import notie from 'notie'
-
+//import notie from 'notie'
+const notie = {}
 const notice = {
   _alert(type, message) {
     notie.alert(type, message, 3)
