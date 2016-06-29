@@ -2,7 +2,7 @@ import React from 'react'
 import actionCreators from '../redux/actions'
 import Tab from 'components/weui/tab'
 
-import { connect } from 'react-redux'
+import connect from 'react-redux/lib/components/connect'
 import { Body, Foot } from 'app/layout'
 
 import 'weui'
