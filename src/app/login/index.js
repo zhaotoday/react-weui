@@ -63,9 +63,8 @@ module.exports = class extends React.Component {
     this.setState({
       showLoading: true
     })
-    setTimeout(() => {
-      this.context.router.push('/')
-    }, 1000)
+
+    this.context.router.push('/')
   }
 
   /*

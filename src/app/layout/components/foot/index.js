@@ -29,17 +29,17 @@ export default class extends React.Component {
         active={this.state.tab === '/help'}
         onClick={this._handleClickTab('/help')}
         icon={<I type="help" />}
-        label="我来帮忙" />
+        label="帮忙" />
       <TabBar.Item
         active={this.state.tab === '/need'}
         onClick={this._handleClickTab('/need')}
         icon={<I type="need" />}
-        label="找人帮忙" />
+        label="求助" />
       <TabBar.Item
         active={this.state.tab === '/setup'}
         onClick={this._handleClickTab('/setup')}
         icon={<I type="user" />}
-        label="账号设置" />
+        label="我" />
     </TabBar>
   }
 
