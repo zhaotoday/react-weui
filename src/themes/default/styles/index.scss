@@ -9,7 +9,7 @@ body {
 }
 
 #app,
-div[data-reactroot] {
+#app > div {
   height: 100%;
   overflow: hidden;
 }

@@ -52,7 +52,11 @@ const config = {
   resolve: {
     root: path.resolve(),
     modulesDirectories: ['src', 'node_modules'],
-    extensions: ['', '.js', '.jsx', '.html', '.css', '.scss']
+    extensions: ['', '.js', '.jsx', '.html', '.css', '.scss'],
+    alias: {
+      'react': 'react-lite',
+      'react-dom': 'react-lite'
+    }
   }
 }
 
