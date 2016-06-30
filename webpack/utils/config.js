@@ -21,7 +21,7 @@ const config = {
       {
         test: /\.scss$/,
         include: /src/,
-        loader: 'style!css!sass'
+        loader: 'style!css!sass!postcss'
       }
     ]
   },
