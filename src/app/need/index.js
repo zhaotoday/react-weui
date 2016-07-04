@@ -15,6 +15,15 @@ import MediaBox from 'components/weui/mediaBox'
 module.exports = class extends React.Component {
   render() {
     return <section>
+      <TopBar>
+        <TopBar.Left>
+          <I type="arrow-l" />
+        </TopBar.Left>
+        <TopBar.Title>找人帮忙</TopBar.Title>
+        <TopBar.Right>
+          <I type="home" />
+        </TopBar.Right>
+      </TopBar>
       <Cells.Title>任务名称</Cells.Title>
       <Form>
         <Form.Cell>
@@ -47,6 +56,9 @@ module.exports = class extends React.Component {
           </Cell.Body>
         </Form.Cell>
       </Form>
+      <Button.Area>
+        <Button>发布</Button>
+      </Button.Area>
     </section>
   }
 }
