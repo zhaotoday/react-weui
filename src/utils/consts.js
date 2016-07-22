@@ -17,7 +17,7 @@ const ENV = (function () {
 })()
 
 // 基础地址
-const BASE_URL = (function () {
+const BASE_URL = (() => {
   if (ENV === DEVELOPMENT) {
     return 'http://localhost:8080'
   } else {
