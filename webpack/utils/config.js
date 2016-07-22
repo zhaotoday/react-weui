@@ -20,7 +20,7 @@ const config = {
       },
       {
         test: /\.scss$/,
-        include: /src/,
+        include: [path.resolve('src/themes')],
         loader: 'style!css!sass!postcss'
       }
     ]

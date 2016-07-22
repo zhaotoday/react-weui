@@ -17,8 +17,11 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        include: /src/,
+        test: /\.scss$/,
+        include: [
+          path.resolve('src/app'),
+          path.resolve('src/components')
+        ],
         loader: 'style!css?modules&localIdentName=[hash:base64:5]!sass!postcss'
       },
       {
