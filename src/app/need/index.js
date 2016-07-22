@@ -5,12 +5,8 @@ import Cells from 'components/weui/cells'
 import Form from 'components/weui/form/form'
 import Input from 'components/weui/form/input'
 import TextArea from 'components/weui/form/textArea'
-import Label from 'components/weui/label'
-import Toast from 'components/weui/toast'
 import I from 'components/i'
 import TopBar from 'components/topBar'
-import Panel from 'components/weui/panel'
-import MediaBox from 'components/weui/mediaBox'
 
 module.exports = class extends React.Component {
   render() {

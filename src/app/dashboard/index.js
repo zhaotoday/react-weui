@@ -1,6 +1,4 @@
 import React from 'react'
-import Panel from 'components/weui/panel'
-import MediaBox from 'components/weui/mediaBox'
 import TopBar from 'components/topBar'
 import I from 'components/i'
 

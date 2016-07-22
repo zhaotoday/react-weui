@@ -6,7 +6,6 @@ import Input from 'components/weui/form/input'
 import Label from 'components/weui/label'
 import Toast from 'components/weui/toast'
 import I from 'components/i'
-import TopBar from 'components/topBar'
 import styles from './theme/styles'
 
 module.exports = class extends React.Component {
