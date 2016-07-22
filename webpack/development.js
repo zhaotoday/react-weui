@@ -42,6 +42,7 @@ module.exports = {
       ...config.module.loaders
     ]
   },
+  sassLoader: config.sassLoader,
   postcss: function () {
     return [
       require('postcss-browser-reporter'),

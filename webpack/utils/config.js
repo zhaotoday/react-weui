@@ -25,6 +25,9 @@ const config = {
       }
     ]
   },
+  sassLoader: {
+    includePaths: ['src']
+  },
   postcss: [
     require('postcss-font-magician')(),
     require('cssnano')({

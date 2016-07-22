@@ -32,6 +32,7 @@ module.exports = {
       ...config.module.loaders
     ]
   },
+  sassLoader: config.sassLoader,
   postcss: function () {
     return config.postcss
   },
