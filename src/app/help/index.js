@@ -11,7 +11,7 @@ module.exports = class extends React.Component {
         <TopBar.Left>
           <I type="arrow-l" />
         </TopBar.Left>
-        <TopBar.Title>我要帮忙</TopBar.Title>
+        <TopBar.Title>我来帮忙</TopBar.Title>
         <TopBar.Right>
           <I type="home" />
         </TopBar.Right>
