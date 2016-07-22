@@ -1,0 +1,7 @@
+@mixin font($index, $dpr) {
+  font-size: nth(nth($font, $index), 1) * $dpr;
+
+  @if (length(nth($font, $index)) == 2) {
+    font-weight: bold;
+  }
+}
