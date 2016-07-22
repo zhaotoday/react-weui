@@ -6,7 +6,7 @@ import connect from 'react-redux/lib/components/connect'
 import { Body, Foot } from 'app/layout'
 
 import 'weui'
-import '../themes/default/global'
+import 'themes/global'
 
 @connect(
   state => ({
