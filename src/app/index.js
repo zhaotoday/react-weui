@@ -10,15 +10,16 @@ import 'themes/global'
 
 @connect(
   state => ({
-    article: state.article
+    articles: state.articles
   }),
   dispatch => ({
-    postArticle: (options) => dispatch(actionCreators.postArticle(options))
+    postArticleAuthor: (options) => dispatch(actionCreators.postArticleAuthor(options))
   })
 )
 class Comp extends React.Component {
   componentDidMount() {
-    this.props.postArticle({
+    this.props.postArticleAuthor({
+      article_id: 123,
       data: {
         title: 'the title'
       }
